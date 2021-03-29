@@ -43,3 +43,34 @@ form.city-search::after {
   background-color: rgb(31, 31, 37);
   color:whitesmoke
 }
+
+/* added cards and display*/
+
+.display-4{
+  text-align: center;
+  background-color: rgb(31, 31, 37);
+  color:whitesmoke
+}
+
+.card-body {
+  background-color: blue;
+  color:white;
+  justify-content: space-between;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+}
+
+#uv-index {
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  border-radius:.25rem;
+}
