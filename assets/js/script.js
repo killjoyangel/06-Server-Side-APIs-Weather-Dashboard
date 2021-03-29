@@ -23,6 +23,12 @@ fetch (currentCityQueryURL)
     .then (function (res) {
         return res.json()
     })
+    function searchKey() {
+        var citySearchInput = document.getElementById("city-search");
+        document.getElementById("city").innerHTML = "You are searching for: " + search.value;
+     }
+
+
 console.log(currentCity)
 
  .then (function (currentCitydata) {
@@ -43,29 +49,8 @@ console.log(currentCity)
     uvIndex.textContent = 'Uv Index' + uvIndexdata.value;
 })
 
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // attempt at search history 
-    function myFunction() {
+    function searchHistory() {
         var input, filter, ul, li, a, i, txtValue;
         input = document.getElementById("#searchHistory");
         filter = input.value.toUpperCase();
@@ -81,3 +66,19 @@ console.log(currentCity)
             }
         }
     }
+
+   searchHistory()
+    $('#search-city-button').on('click', function(event) {
+        var value = $(this).siblings('.description').val();
+        var forecast = $(this).parent().attr('id');
+ 
+        //local storage goes here
+        $("#currentTemp").val(localStorage.getItem("Temperature9"));
+        $("#currentHumidity").val(localStorage.getItem("Humidity"));
+        $("#current-wind-speed").val(localStorage.getItem("WindSpeed"));
+
+
+        localStorage.getItem(forecast);
+        localStorage.setItem(forcast, value); 
+ 
+    })
