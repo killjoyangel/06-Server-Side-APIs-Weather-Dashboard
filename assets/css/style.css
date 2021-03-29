@@ -1,0 +1,45 @@
+/* buttons and jumbo tron*/
+* {
+  box-sizing: border-box;
+}
+
+form.city-search input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+ align: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.city-search button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+ border-left: none;
+  cursor: pointer;
+}
+
+form.city-search button:hover {
+  background: #0b7dda;
+}
+
+form.city-search::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.jumbotron jumbotron-fluid {
+  background-color: rgb(31, 31, 37);
+  color:whitesmoke
+
+  margin: 0 0 32;
+  padding:64 0; 
+}
+.jumbo-container {
+  background-color: rgb(31, 31, 37);
+  color:whitesmoke
+}
