@@ -11,13 +11,107 @@
 </head>
 <body>
  <!--Jumbotron-->
- 
- <div class="jumbotron bg-dark text-white  text-center">
+  <div class="jumbotron bg-dark text-white  text-center">
     <div class="container">
         <h1 class="dashboard-display-4">Weather Dashboard</h1>
     </div>
 </div>
 
+<!--added main and a section for the search bar/button and search history-->
+<main class="container-fluid">
+    <section class="col-12 col-md-4 float-left">
+        <div class="card city-card">
+            <h3 class="city-card-header"> Search City</h3>
+            <div class="body-cards">
+                <div class="cardWords">
+                    <form>
+                        <div class="form-group input-group">
+                            <input type="text" class="form-control" id="search-city" placeholder="Enter city here">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button" id="search-city-button">
+                                    <i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                    <form id=searchhistory class="searchList">
+                        <div class="card">
+                            <ul class="list-group list-group-flush" id="searchHistory">
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <!--adding weather/forecast-->
+        <div class="row">
+        <div class="col-12">
+            <div class="city-info border rounded my-3 px-3 py-3">
+                <h2 id="currentCity">(Grand Junction)<small class="text-muted" id="currentDate"> (03/28/2021)</small><img src="https://openweathermap.org/img/w/03n.png" alt="Clouds"></h2>
+                <p class="mb-0">Temperature: <span id="currentTemp">40.6°F</span></p>
+                <p class="mb-0">Humidity: <span id="currentHumidity">31%</span></p>
+                <p class="mb-0">Wind Speed: <span id="current-wind-speed">4.27MPH</span></p>
+                <p>UV index: <span id="uv-index">6.61</span></p>
+            </div>
+        </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h3>5-Day Forecast</h3>
+    </div>
+</div>
+<!--adding 5 day weather/forecast-->
+<div id="five-day-forecast" class="row"><div class="col-12 col-md-6 col-lg forecast-day mb-3">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="future-date">03/28/2021</h5>
+            <img src="https://openweathermap.org/img/w/01n.png" alt="Clear">
+            <p class="card-text mb-0">Temp: 39.56°F</p>
+            <p class="card-text mb-0">Humidity: 40%</p>
+        </div>
+    </div>
+</div>
+<div class="col-12 col-md-6 col-lg forecast-day mb-3">
+    <div class="card"
+    ><div class="card-body">
+        <h5 class="future-date">03/29/2021</h5>
+        <img src="https://openweathermap.org/img/w/04n.png" alt="Clouds">
+        <p class="card-text mb-0">Temp: 45.81°F</p>
+        <p class="card-text mb-0">Humidity: 37%</p>
+    </div
+    ></div
+    ></div>
+    <div class="col-12 col-md-6 col-lg forecast-day mb-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="future-date">03/30/2021</h5>
+                <img src="https://openweathermap.org/img/w/13n.png" alt="Snow">
+                <p class="card-text mb-0">Temp: 35.4°F</p>
+                <p class="card-text mb-0">Humidity: 26%</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg forecast-day mb-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="future-date">03/31/2021</h5>
+                <img src="https://openweathermap.org/img/w/01n.png" alt="Clear">
+                <p class="card-text mb-0">Temp: 37.08°F</p>
+                <p class="card-text mb-0">Humidity: 30%</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg forecast-day mb-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="future-date">04/01/2021</h5
+                    ><img src="https://openweathermap.org/img/w/01n.png" alt="Clear">
+                    <p class="card-text mb-0">Temp: 42.58°F</p>
+                    <p class="card-text mb-0">Humidity: 41%</p>
+                </div>
+            </div>
+        </div>
 
 
 
@@ -26,9 +120,6 @@
 
 
 
-
-
-
-
+</main>
 </body>
 </html>
