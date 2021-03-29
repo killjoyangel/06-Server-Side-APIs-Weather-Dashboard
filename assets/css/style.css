@@ -68,7 +68,7 @@ form.city-search::after {
   border-radius: .25rem;
 }
 
-#uv-index {
+.uv-index {
   background-color: red;
   color: white;
   border: 1px solid red;
